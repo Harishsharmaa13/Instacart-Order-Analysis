@@ -14,6 +14,19 @@ and then imported into Python for further processing. To handle large datasets e
 
 ---
 
+## 📦 Dataset Overview
+
+- Total Size: ~35 million records
+- Source Tables:
+  - `orders.csv` – 3.4 million rows
+  - `order_products__prior.csv` – 32 million rows
+  - `order_products__train.csv` – 1.3 million rows
+  - `products.csv` – 49,000 products
+  - `aisles.csv` – 134 rows
+  - `departments.csv` – 21 rows
+ 
+---
+
 ## 📥 Data Flow & Processing
 
 | Stage              | Description                                                  |
