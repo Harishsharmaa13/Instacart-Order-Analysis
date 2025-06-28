@@ -57,6 +57,31 @@ and then imported into Python for further processing. To handle large datasets e
 
 - Products per basket and reorder frequency
 
+## 🛠️ Tools & Technologies
+
+| Tool            | Purpose                                                                 |
+|-----------------|-------------------------------------------------------------------------|
+| **MySQL**       | Data storage and extraction using SQL queries                           |
+| **PySpark**     | Scalable big data processing & transformation                           |
+| **Pandas**      | Data manipulation and preprocessing in Python                           |
+| **Matplotlib**  | Plotting basic and customized visualizations                            |
+| **Seaborn**     | Advanced and statistical data visualizations                            |
+| **Jupyter**     | Interactive environment for analysis and coding                         |
+| **Parquet**     | Optimized data storage format for faster I/O with columnar efficiency   |
+
+
+## 📈 Sample Insights
+- 🌀 Over 60% of products are reordered → strong repeat behavior
+
+- 📦 Most baskets contain 6–12 items
+
+- ⏱️ Sunday and Monday are the most active shopping days
+
+- 🧍 Top 10% of users place 50+ orders → highly engaged customers
+
+## 📝 Read full insights in INSIGHTS.md
+
+
 
 
 
