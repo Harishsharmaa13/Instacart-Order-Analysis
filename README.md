@@ -1,91 +1,75 @@
-# 🛒 Instacart Market Basket Analysis (PySpark Project)
+Instacart Market Basket Analysis using PySpark & Pandas
+This project showcases an end-to-end data analysis workflow on Instacart order data. The data was initially stored in SQL Server, extracted using SQL queries, downloaded as .csv files, and then imported into Python for further processing. To handle large datasets efficiently, the data was converted into Parquet format and processed using PySpark.
 
-This project analyzes customer behavior and product trends from the Instacart dataset using **PySpark**, **Pandas**, and **Seaborn**. It focuses on four key business areas: product performance, customer engagement, time-based order patterns, and basket-level behavior.
+📌 Objectives
+Understand product reorder behavior and top-selling categories
 
----
+Analyze customer order habits by time, basket size, and frequency
 
-## 📌 Objectives
+Identify one-time vs repeat buyers and power users
 
-- Identify top-selling products and aisles
-- Analyze one-time vs repeat buyer behavior
-- Discover ordering patterns by time/day
-- Evaluate basket size and reorder behavior
+Provide actionable business insights based on historical order data
 
----
+📥 Data Flow & Processing
+Data Source: Extracted from Microsoft SQL Server using SQL Server Management Studio (SSMS)
 
-## 🧠 Key Analysis Areas
+Data Export: Exported relational tables as .csv files to local system
 
-### 1. 🛒 Product Performance Analysis
-- Most popular products and aisles
-- Reorder rates per product and aisle
-- Inventory insights based on product distribution
+Data Optimization: Converted .csv files into .parquet format for faster loading and processing
 
-### 2. 👥 Customer Behavior Analysis
-- One-time vs repeat customer ratio
-- Power user behavior (top users by order count)
-- Retention trends and engagement patterns
+Processing Tool: Used PySpark for large-scale data manipulation and aggregation
 
-### 3. ⏰ Order Pattern & Time-Based Analysis
-- Orders by day of week & hour of day
-- Peak shopping periods
-- Weekly order size comparison
+Visualization & Insights: Used Pandas, Seaborn, and Matplotlib for plotting and analysis
 
-### 4. 🧺 Basket / Cart Behavior Analysis
-- Distribution of products per order
-- Basket size by day of the week
-- Category-wise contribution to basket contents
+🧠 Key Analysis Areas
+1. 🛒 Product Performance Analysis
+Top reordered products & aisles
 
----
+Product count per aisle/department
 
-## 🛠️ Tech Stack
+Reorder rate by aisle
 
-| Tool          | Usage                              |
-|---------------|-------------------------------------|
-| PySpark       | Big data processing and aggregation |
-| Pandas        | Data manipulation and joins         |
-| Seaborn       | Visualization (bar, KDE, line)      |
-| Matplotlib    | Chart customization                 |
-| Jupyter       | Development environment             |
-| Parquet       | Efficient file format (optional)    |
+2. 👥 Customer Behavior Analysis
+One-time vs Repeat buyers
 
----
+Top users by number of orders
 
-## 📁 Dataset
+Power users & their patterns
 
-- 📦 Source: [Kaggle - Instacart Market Basket](https://www.kaggle.com/competitions/instacart-market-basket-analysis/data)
-- Files used:
-  - `orders.csv`
-  - `products.csv`
-  - `aisles.csv`
-  - `departments.csv`
-  - `order_products__prior.csv`
-  - `order_products__train.csv`
+3. ⏰ Time-Based Order Analysis
+Orders by day of week and hour of day
 
----
+Average order size by day
 
-## 📈 Results
+Weekly behavior insights
 
-- Over **60%** of products are reordered — strong brand loyalty
-- **Sunday and Monday** are the most popular days to shop
-- Most orders contain **6 to 12 products**
-- High-frequency users show consistent engagement and large order counts
+4. 🧺 Basket Behavior Analysis
+Order size distribution
 
-👉 See full insights in [`INSIGHTS.md`](INSIGHTS.md)
+Basket size trends by day
 
----
+Products per basket and reorder frequency
 
-## ▶️ How to Run
+🛠️ Tech Stack
+Tool	Purpose
+SQL Server	Original data source (extraction)
+PySpark	Large-scale data processing
+Pandas	Data manipulation & cleaning
+Seaborn	Data visualization
+Matplotlib	Chart customization
+Jupyter	Development environment
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/instacart-analysis.git
-cd instacart-analysis
 
-# (Optional) Create virtual environment
-conda create -n bigdata_env python=3.9
-conda activate bigdata_env
-pip install -r requirements.txt
+📈 Sample Insights
+🌀 Over 60% of products are reordered → Strong repeat behavior
 
-# Launch notebook
-jupyter notebook notebooks/Instacart_EDA.ipynb
+📦 Most baskets contain 6–12 items
+
+⏱️ Sunday and Monday are the most active shopping days
+
+🧍 10% of users place over 50 orders → valuable repeat customers
+
+Read full insights in INSIGHTS.md
+
+
 
