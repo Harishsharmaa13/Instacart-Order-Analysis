@@ -21,7 +21,7 @@ The full dataset used in this project is too large to be hosted on GitHub.
 ## 🔗 Public Dataset Link
 If you'd like to work with the same data, you can download it from the original source:
 
-➡️ [Instacart Market Basket Analysis Dataset](https://www.instacart.com/datasets/grocery-shopping-2017)
+➡️ [Instacart Market Basket Analysis Dataset](https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset)
 
 ## 🛠 Suggested Usage
 - Place your downloaded files inside this `/data` folder
