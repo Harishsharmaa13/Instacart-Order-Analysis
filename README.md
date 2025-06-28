@@ -3,55 +3,59 @@ This project showcases an end-to-end data analysis workflow on Instacart order d
 and then imported into Python for further processing. To handle large datasets efficiently, the data was converted into Parquet format and processed using PySpark.
 
 ## 📌 Objectives
-Understand product reorder behavior and top-selling categories
+- Understand product reorder behavior and top-selling categories
 
-Analyze customer order habits by time, basket size, and frequency
+- Analyze customer order habits by time, basket size, and frequency
 
-Identify one-time vs repeat buyers and power users
+- Identify one-time vs repeat buyers and power users
 
-Provide actionable business insights based on historical order data
+- Provide actionable business insights based on historical order data
 
 ## 📥 Data Flow & Processing
-Data Source: Extracted from MySQL using SQL queries
+- Data Source: Extracted from MySQL using SQL queries
 
-Data Export: Saved relational tables as .csv files on local machine
+- Data Export: Saved relational tables as .csv files on local machine
 
-Data Optimization: Converted .csv files into .parquet format for faster loading
+- Data Optimization: Converted .csv files into .parquet format for faster loading
 
-Processing Tool: Used PySpark for scalable data transformation and analysis
+- Processing Tool: Used PySpark for scalable data transformation and analysis
 
-Visualization: Used Pandas, Seaborn, and Matplotlib for plots and summaries
+- Visualization: Used Pandas, Seaborn, and Matplotlib for plots and summaries
 
 ⚠️ Due to the large size of the dataset, the actual data files are not included in this repository. Refer to the data/README.md for download instructions.
 
 ## 🧠 Key Analysis Areas
 1. 🛒 Product Performance Analysis
-Top reordered products & aisles
 
-Product count per aisle/department
+- Top reordered products & aisles
 
-Reorder rate by aisle
+- Product count per aisle/department
+
+- Reorder rate by aisle
 
 2. 👥 Customer Behavior Analysis
-One-time vs Repeat buyers
+   
+- One-time vs Repeat buyers
 
-Top users by number of orders
+- Top users by number of orders
 
-Power users & their patterns
+- Power users & their patterns
 
 3. ⏰ Time-Based Order Analysis
-Orders by day of week and hour of day
 
-Average order size by day
+- Orders by day of week and hour of day
 
-Weekly behavior insights
+- Average order size by day
+
+- Weekly behavior insights
 
 4. 🧺 Basket Behavior Analysis
-Order size distribution
+   
+- Order size distribution
 
-Basket size trends by day
+- Basket size trends by day
 
-Products per basket and reorder frequency
+- Products per basket and reorder frequency
 
 
 
